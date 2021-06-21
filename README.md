@@ -14,6 +14,7 @@ Mailbox size limit (bytes): usually default value (0)
 Local address extension character: default value (+)
 Internet protocols to use: default value (All)
 
+This will generate the main.cf
 
 Note:
 If for got to setup mail SMTP use the command below.
