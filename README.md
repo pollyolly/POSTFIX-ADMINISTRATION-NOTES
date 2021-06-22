@@ -49,4 +49,6 @@ Note:
 If forgot to setup the Postfix use the command below, to regenerate the main.cf.
 $sudo dpkg-reconfigure postfix
 
+References:
+https://www.linode.com/docs/guides/postfix-smtp-debian7/
 ```
