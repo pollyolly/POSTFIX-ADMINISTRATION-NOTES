@@ -16,7 +16,7 @@ Internet protocols to use: default value (All)
 
 Note: This will generate the main.cf
 
-main.cf
+5. main.cf
 === To Edit in main.cf ===
 myhostname = cp1-station
 relayhost =  [smtp.gmail.com]:587
@@ -33,22 +33,22 @@ smtp_use_tls = yes
 smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 ===
 
-5. Create $touch sasl_passwd
+6. Create $touch sasl_passwd
    Write this inside sasl_passwd:
       $vi sasl_passwd
       [smtp.gmail.com]:587 ilcdcp1.upd@up.edu.ph:ugrxyskeomjuomtt"
       
     Note the format: [mail.host.com]:port gmail-email:app_password" This is you create in your gmail App Password for email.
    
-6. Generate the sasl_passwd.db
+7. Generate the sasl_passwd.db
    $postmap /etc/postfix/sasl_passwd
    
-7. service postfix restart
+8. service postfix restart
 
-8. To test Postfix
+9. To test Postfix
    $echo "test body" | mail -s 'test subject' reciever@example.com
 
-9. Change sender email root<myemail@gmail.com> to CP1Name
+10. Change sender email root<myemail@gmail.com> to CP1Name
    $vi /etc/passwd then add "root:x:0:0:CP1Name:/root:/bin/bash"
 
 Note:
