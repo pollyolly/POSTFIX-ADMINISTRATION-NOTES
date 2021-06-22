@@ -54,4 +54,5 @@ $sudo dpkg-reconfigure postfix
 
 References:
 https://www.linode.com/docs/guides/postfix-smtp-debian7/
+https://netcorecloud.com/tutorials/configure-postfix-sendmail-using-external-server/
 ```
