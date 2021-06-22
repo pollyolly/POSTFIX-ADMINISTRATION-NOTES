@@ -45,6 +45,9 @@ smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
    
 7. service postfix restart
 
+8. To test Postfix
+   $echo "test body" | mail -s 'test subject' reciever@example.com
+
 Note:
 If forgot to setup the Postfix use the command below, to regenerate the main.cf.
 $sudo dpkg-reconfigure postfix
