@@ -48,6 +48,9 @@ smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 8. To test Postfix
    $echo "test body" | mail -s 'test subject' reciever@example.com
 
+9. Change sender email root<myemail@gmail.com> to CP1Name
+   $vi /etc/passwd then add "root:x:0:0:CP1Name:/root:/bin/bash"
+
 Note:
 If forgot to setup the Postfix use the command below, to regenerate the main.cf.
 $sudo dpkg-reconfigure postfix
